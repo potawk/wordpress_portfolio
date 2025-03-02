@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+// ブレイクポイントを指定
+$sp: 600px;
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}

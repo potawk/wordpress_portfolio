@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@use "variable" as v;
+@use "mixin" as m;
+
+/*-----------------------------------------
+共通部分
+------------------------------------------*/
+html {
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+body{
+	color: v.$font-color;
+	font-size: 1.44rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+	color: v.$font-color;
+}
+
+.section-title{
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+}

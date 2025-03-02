@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@use "variable" as v;
+@use "mixin" as m;
+
+#contact{
+	padding-bottom: 130px;
+
+	@include m.sp{
+		padding-bottom: 70px;
+	}
+}
+.contact-title{
+	margin-bottom: 70px;
+
+	@include m.sp{
+		margin-bottom: 49px;
+	}
+}
+.contact__form{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	@include m.sp{
+		flex-direction: column;
+	}
+}
+.contact__label{
+	width: 14%;
+
+	@include m.sp{
+		width: 100%;
+		margin-bottom: 3px;
+	}
+}
+.contact__input{
+	width: 86%;
+	
+	@include m.sp{
+		width: 100%;
+	}
+
+	input{
+		height: 43px;
+		width: 100%;
+		border: 1px solid v.$line-color;
+		margin-bottom: 10px;
+
+		@include m.sp{
+			margin-bottom: 14px;
+		}
+	}
+
+	textarea{
+		height: 160px;
+		width: 100%;
+		border: 1px solid v.$line-color;
+		resize: none;
+		margin-bottom: 30px;
+	}
+}
+.submit{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background: v.$font-color;
+	padding: 19px 0;
+	border: 1px solid v.$font-color;
+	transition: all 0.5s;
+
+	&:hover{
+		color: v.$font-color;
+		background: #fff;
+	}
+}

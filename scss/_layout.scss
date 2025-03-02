@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@use 'variable' as v;
+@use 'mixin' as m;
+
+.wrap{
+	max-width: 960px;
+	padding: 0 4%;
+	margin: auto;
+}

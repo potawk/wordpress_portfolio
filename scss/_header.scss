@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@use "variable" as v;
+@use "mixin" as m;
+
+.header {
+  width: 100%;
+  // position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .wrap {
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m.sp {
+      flex-direction: column;
+      height: 102px;
+      justify-content: center;
+    }
+  }
+}
+.header__logo {
+  width: 120px;
+
+  @include m.sp {
+    width: 143px;
+    margin-bottom: 10px;
+  }
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+
+    @include m.sp {
+      margin-right: 24px;
+    }
+  }
+  a {
+    @include m.sp {
+      font-size: 1.28rem;
+    }
+  }
+}
+.insta {
+  width: 20px;
+}

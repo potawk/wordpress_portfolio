@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrap">
+			<h1 class="header__logo"><a href=""><img src="img/logo.svg" alt="My Work"></a></h1>
+			<nav>
+				<ul class="header__items">
+					<li class="header__item"><a href="">About</a></li>
+					<li class="header__item"><a href="">Works</a></li>
+					<li class="header__item"><a href="">News</a></li>
+					<li class="header__item"><a href="">Contact</a></li>
+					<li class="header__item insta"><a href=""><img src="img/icon-instagram.png" alt=""></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div id="mainvisual">
+			<picture>
+				<source srcset="img/mainvisual-sp.jpg" media="(max-width: 600px)" width="640" height="420">
+				<img src="img/mainvisual-pc.jpg" alt="mainvisual" width="1920" height="420">
+			</picture>
+		</div>
+
+		<section id="about" class="wrap">
+			<h2 class="section-title about__title">About</h2>
+			<ul class="about__items">
+				<li class="about__item">Xxxxx Ashley</li>
+				<li class="about__item">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+				<li class="about__item">tel: 000-0000-0000</li>
+				<li class="about__item">url: www.xxxxxx.jp</li>
+				<li class="about__item">mail: xxx@xxxxxx.jp</li>
+			</ul>
+			<p class="about__txt">
+				プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト
+			</p>
+		</section>
+
+		<section id="works" class="wrap">
+			<h2 class="section-title works__title">Works</h2>
+			<ul class="works__items">
+				<li class="works__item"><a href=""><img src="img/works1.jpg" alt=""></a></li>
+				<li class="works__item"><a href=""><img src="img/works2.jpg" alt=""></a></li>
+				<li class="works__item"><a href=""><img src="img/works3.jpg" alt=""></a></li>
+				<li class="works__item"><a href=""><img src="img/works4.jpg" alt=""></a></li>
+				<li class="works__item"><a href=""><img src="img/works5.jpg" alt=""></a></li>
+				<li class="works__item"><a href=""><img src="img/works6.jpg" alt=""></a></li>
+			</ul>
+		</section>
+
+		<section id="news" class="wrap">
+			<h2 class="section-title news__title">News</h2>
+			<dl class="news__items">
+				<dt class="news__date">2020.XX.XX</dt>
+				<dd class="news__event">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+				<dt class="news__date">2020.XX.XX</dt>
+				<dd class="news__event">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+				<dt class="news__date">2019.XX.XX</dt>
+				<dd class="news__event">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+				<dt class="news__date">2019.XX.XX</dt>
+				<dd class="news__event">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+				<dt class="news__date">2019.XX.XX</dt>
+				<dd class="news__event">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+			</dl>
+		</section>
+
+		<section id="contact" class="wrap">
+			<h2 class="section-title contact-title">Contact</h2>
+			<form action="">
+				<dl class="contact__form">
+					<dt class="contact__label"><label for="name">NAME</label></dt>
+					<dd class="contact__input"><input type="text" id="name"></dd>
+					<dt class="contact__label"><label for="mail">E-mail</label></dt>
+					<dd class="contact__input"><input type="email" id="mail"></dd>
+					<dt class="contact__label"><label for="message">MESSAGE</label></dt>
+					<dd class="contact__input"><textarea name="" id="message"></textarea></dd>
+				</dl>
+				<button class="submit">送信</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>&copy; 2020 My Work</p>
+	</footer>
+</body>
+</html>

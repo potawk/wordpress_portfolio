@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@use "variable" as v;
+@use "mixin" as m;
+
+.footer{
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: v.$font-color;
+	color: #fff;
+
+	p{
+		font-size: 1rem;
+	}
+}
