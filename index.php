@@ -28,7 +28,7 @@
 		<?php endif; ?>
 		<?php wp_reset_postdata(); ?>
 		</ul>
-		<a class="seemore" href="<?php echo esc_url(home_url('/category/works')); ?>">See More</a>
+		<a class="link" href="<?php echo esc_url(home_url('/category/works')); ?>">See More</a>
 	</section>
 
 	<section id="news" class="wrap">
@@ -45,16 +45,16 @@
 		?>
 		<?php if ( $news_query->have_posts() ) : ?>
 			<?php while ( $news_query->have_posts() ) : ?>
+				<?php $news_query->the_post(); ?>
 				<a class="news__items" href="<?php the_permalink(); ?>">
-					<?php $news_query->the_post(); ?>
-					<dt class="news__date"><?php the_title(); ?></dt>
-					<dd class="news__event"><?php the_content(); ?></dd>
+					<dt class="news__date"><?php the_time('Y.m.d'); ?></dt>
+					<dd class="news__event"><?php the_title(); ?></dd>
 				</a>
 			<?php endwhile; ?>
 		<?php endif; ?>
 		<?php wp_reset_postdata(); ?>
 		</dl>
-		<a class="seemore" href="<?php echo esc_url(home_url('/category/news')); ?>">See More</a>
+		<a class="link" href="<?php echo esc_url(home_url('/category/news')); ?>">See More</a>
 	</section>
 
 </main>
