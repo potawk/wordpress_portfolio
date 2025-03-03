@@ -23,7 +23,7 @@
 					<li class="header__item"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">Works</a></li>
 					<li class="header__item"><a href="<?php echo esc_url(home_url('/category/news')); ?>">News</a></li>
 					<li class="header__item"><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
-					<li class="header__item insta"><a href=""><img src="img/icon-instagram.png" alt=""></a></li>
+					<li class="header__item insta"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/icon-instagram.png" alt=""></a></li>
 				</ul>
 			</nav>
 		</div>

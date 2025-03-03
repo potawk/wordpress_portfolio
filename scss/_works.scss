@@ -4,6 +4,7 @@
 @use 'mixin' as m;
 
 #works{
+	padding-top: 87px;
 	padding-bottom: 137px;
 
 	@include m.sp{
@@ -50,4 +51,28 @@
 			margin-bottom: 23px;
 		}
 	}
+}
+
+.works-category__items{
+	display: flex;
+	flex-direction: column;
+}
+
+.works-category__item{
+	width: 100%;
+}
+
+.works-category__title{
+	font-size: 1.44rem;
+	margin-top: 34px;
+	margin-bottom: 15px;
+}
+
+.works-category__content{
+	font-size: 1.44rem;
+
+	&:not(:last-of-type){
+		margin-bottom: 140px;
+	}
+	
 }

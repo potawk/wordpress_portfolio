@@ -5,12 +5,7 @@
 
 #mainvisual{
 	width: 100%;
-	margin-top: 270px;
 
-	@include m.sp{
-		margin-top: 102px;
-	}
-	
 	img{
 		object-fit: cover;
 	}
