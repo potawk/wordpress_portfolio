@@ -4,12 +4,12 @@
 @use 'mixin' as m;
 
 #works{
-	padding-top: 87px;
-	padding-bottom: 219px;
+	// padding-top: 87px;
+	// padding-bottom: 219px;
 
-	@include m.sp{
-		padding-bottom: 77px;
-	}
+	// @include m.sp{
+	// 	padding-bottom: 77px;
+	// }
 }
 
 .works__title{

@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="wrap">
+		<div class="header-wrap">
 			<?php $html_tag = (is_home() || is_front_page()) ? 'h1' : 'div'; ?>
 			<<?php echo $html_tag; ?> class="header__logo">
 				<a href="<?php echo esc_url(home_url()); ?>">

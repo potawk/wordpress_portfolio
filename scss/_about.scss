@@ -1,38 +1,34 @@
 @charset "UTF-8";
 
-@use 'variable' as v;
-@use 'mixin' as m;
+@use "variable" as v;
+@use "mixin" as m;
 
-#about{
-	padding-top: 7px;
-	padding-bottom: 133px;
+// #about {
+//   padding-top: 7px;
+//   padding-bottom: 133px;
+// }
+.about__title {
+  margin-bottom: 74px;
 
-	@include m.sp{
-		padding-bottom: 61px;
-	}
+  @include m.sp {
+    margin-bottom: 49px;
+  }
 }
-.about__title{
-	margin-bottom: 74px;
+.about__items {
+  margin-bottom: 47px;
 
-	@include m.sp{
-		margin-bottom: 49px;
-	}
+  @include m.sp {
+    margin-bottom: 51px;
+  }
 }
-.about__items{
-	margin-bottom: 47px;
-
-	@include m.sp{
-		margin-bottom: 51px;
-	}
+.about__item {
+  &:first-child {
+    margin-bottom: 37px;
+  }
+  &:nth-child(n + 2) {
+    line-height: 1.18;
+  }
 }
-.about__item{
-	&:first-child{
-		margin-bottom: 37px;
-	}
-	&:nth-child(n + 2){
-		line-height: 1.18;
-	}
-}
-.about__txt{
-	line-height: 1.18;
+.about__txt {
+  line-height: 1.18;
 }

@@ -5,13 +5,12 @@
 
 .header {
   width: 100%;
-  // position: fixed;
   background: #fff;
   top: 0;
   left: 0;
   right: 0;
 
-  .wrap {
+  .header-wrap {
     height: 270px;
     display: flex;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-	<section id="works" class="works-wrap">
+	<section class="works-wrap wrap">
 		<h1 class="section-title works__title">Works</h1>
 		<ul class="works-category__items">
 		<?php if ( have_posts() ) : ?>

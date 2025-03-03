@@ -7,10 +7,23 @@
 	max-width: 960px;
 	padding: 0 4%;
 	margin: auto;
+	padding-bottom: 219px;
+
+	@include m.sp{
+		padding-bottom: 245px;
+		padding-top: 49px;
+	}
 }
 
 .works-wrap{
 	max-width: 640px;
 	padding: 0 4%;
 	margin: auto;
+	padding-bottom: 219px;
+	padding-top: 49px;
+
+	@include m.sp{
+		padding-bottom: 245px;
+		padding-top: 49px;
+	}
 }
